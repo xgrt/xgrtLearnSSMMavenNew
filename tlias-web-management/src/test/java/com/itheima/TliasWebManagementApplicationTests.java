@@ -47,7 +47,7 @@ class TliasWebManagementApplicationTests {
     @Test
     public void testParseJwt(){
         Claims claims = Jwts.parser()
-                .setSigningKey("itheima")
+                .setSigningKey("itheima").build()
                 .parseClaimsJws("eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoidG9tIiwiaWQiOjEsImV4cCI6MTY3MDQ2NDU0N30.yPLRyiusrlrmWeC4-dhInjFuAghPkmiHSRHd_DTKi9E")
                 .getBody();
         System.out.println(claims);
