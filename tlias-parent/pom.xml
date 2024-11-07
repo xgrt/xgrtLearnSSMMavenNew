@@ -76,4 +76,19 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <!--配置当前工程保存在私服中的具体位置：id要和setting配置的私服id保持一致-->
+    <distributionManagement>
+        <!--正式版的仓库-->
+        <repository>
+            <id>xgrtHB-release</id>
+            <url>http://localhost:8081/repository/xgrtHB-release/</url>
+        </repository>
+
+        <!--快照版的仓库-->
+        <snapshotRepository>
+            <id>xgrtBH-snapshot</id>
+            <url>http://localhost:8081/repository/xgrtBH-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
